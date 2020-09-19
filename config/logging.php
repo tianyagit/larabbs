@@ -101,4 +101,15 @@ return [
         ],
     ],
 
+    /**
+     * overtrue/laravel-query-logger
+     */
+    'query' => [
+        'enabled' => env('LOG_QUERY', false),
+
+        // Only record queries that are slower than the following time
+        // Unit: milliseconds
+        'slower_than' => 0,
+    ],
+
 ];
