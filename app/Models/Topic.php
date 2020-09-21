@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use Spatie\QueryBuilder\QueryBuilder;
+
 class Topic extends Model
 {
     protected $fillable = ['title', 'body', 'category_id', 'excerpt', 'slug'];
@@ -54,4 +56,5 @@ class Topic extends Model
         $this->reply_count = $this->replies->count();
         $this->save();
     }
+
 }
